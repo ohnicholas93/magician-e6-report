@@ -1,0 +1,102 @@
+###### INITIAL INDIVIDUALS
+
+#0T1
+["A", "-a", "0", "0"],
+["a", "A", "0", "0"],
+["0", "0", "1", "0"],
+["0", "0", "0", "1"]
+
+#1T2
+["-b", "-B", "0", "0"],
+["0", "0", "-1", "0"],
+["B", "-b", "0", "0"],
+["0", "0", "0", "1"]
+
+#2T3
+["C", "-c", "0", "w"],
+["c", "C", "0", "0"],
+["0", "0", "1", "0"],
+["0", "0", "0", "1"]
+
+#3T4
+["D", "-d", "0", "x"],
+["d", "D", "0", "0"],
+["0", "0", "1", "y"],
+["0", "0", "0", "1"]
+
+#4T5
+["E", "-e", "0", "0"],
+["0", "0", "1", "z"],
+["-e", "-E", "0", "0"],
+["0", "0", "0", "1"]
+
+#5T6
+["F", "-f", "0", "0"],
+["0", "0", "-1", "0"],
+["f", "F", "0", "0"],
+["0", "0", "0", "1"]
+
+###### 0T1
+
+["A", "-a", "0", "0"]
+["a", "A", "0", "0"]
+["0", "0", "1", "0"]
+["0", "0", "0", "1"]
+
+###### 0T2
+
+['-Ab', '-AB', 'a', '0']
+['-ab', '-Ba', '-A', '0']
+['B', '-b', '0', '0']
+['0', '0', '0', '1']
+
+###### 0T3
+
+['-ABc-ACb', '-ABC+Abc', 'a', '-Abw']
+['-Bac-Cab', '-BCa+abc', '-A', '-abw']
+['BC-bc', '-Bc-Cb', '0', 'Bw']
+['0', '0', '0', '1']
+
+###### 0T4
+
+['-ABCd-ABDc-ACDb+Abcd', '-ABCD+ABcd+ACbd+ADbc', 'a', '-ABcx-ACbx-Abw+ay']
+['-BCad-BDac-CDab+abcd', '-BCDa+Bacd+Cabd+Dabc', '-A', '-Ay-Bacx-Cabx-abw']
+['BCD-Bcd-Cbd-Dbc', '-BCd-BDc-CDb+bcd', '0', 'BCx+Bw-bcx']
+['0', '0', '0', '1']
+
+###### 0T5
+
+['-ABCEd-ABDEc-ACDEb+AEbcd-ae', 'ABCde+ABDce+ACDbe-Abcde-Ea', '-ABCD+ABcd+ACbd+ADbc', '-ABCDz+ABcdz-ABcx+ACbdz-ACbx+ADbcz-Abw+ay']
+['Ae-BCEad-BDEac-CDEab+Eabcd', 'AE+BCade+BDace+CDabe-abcde', '-BCDa+Bacd+Cabd+Dabc', '-Ay-BCDaz+Bacdz-Bacx+Cabdz-Cabx+Dabcz-abw']
+['BCDE-BEcd-CEbd-DEbc', '-BCDe+Bcde+Cbde+Dbce', '-BCd-BDc-CDb+bcd', '-BCdz+BCx-BDcz+Bw-CDbz+bcdz-bcx']
+['0', '0', '0', '1']
+
+###### 0T6
+
+['-ABCDf-ABCEFd-ABDEFc+ABcdf-ACDEFb+ACbdf+ADbcf+AEFbcd-Fae', '-ABCDF+ABCEdf+ABDEcf+ABFcd+ACDEbf+ACFbd+ADFbc-AEbcdf+aef', '-ABCde-ABDce-ACDbe+Abcde+Ea', '-ABCDz+ABcdz-ABcx+ACbdz-ACbx+ADbcz-Abw+ay']
+['AFe-BCDaf-BCEFad-BDEFac+Bacdf-CDEFab+Cabdf+Dabcf+EFabcd', '-Aef-BCDFa+BCEadf+BDEacf+BFacd+CDEabf+CFabd+DFabc-Eabcdf', '-AE-BCade-BDace-CDabe+abcde', '-Ay-BCDaz+Bacdz-Bacx+Cabdz-Cabx+Dabcz-abw']
+['BCDEF-BCdf-BDcf-BEFcd-CDbf-CEFbd-DEFbc+bcdf', '-BCDEf-BCFd-BDFc+BEcdf-CDFb+CEbdf+DEbcf+Fbcd', 'BCDe-Bcde-Cbde-Dbce', '-BCdz+BCx-BDcz+Bw-CDbz+bcdz-bcx']
+['0', '0', '0', '1']
+
+###### TOKEN
+
+a = a
+b = b
+c = c
+d = d
+e = e
+f = f
+
+A = A
+B = B
+C = C
+D = D
+E = E
+F = F
+
+w = w
+x = x
+y = y
+z = z
+0 = 0
+1 = 1

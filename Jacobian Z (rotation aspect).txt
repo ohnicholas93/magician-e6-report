@@ -1,0 +1,6 @@
+0z1 = ["0", "0", "1"]
+0z2 = ["a", "-A", "0"]
+0z3 = ["a", "-A", "0"]
+0z4 = ["a", "-A", "0"]
+0z5 = ["-ABCD+ABcd+ACbd+ADbc", "-BCDa+Bacd+Cabd+Dabc", "-BCd-BDc-CDb+bcd"]
+0z6 = ["-ABCde-ABDce-ACDbe+Abcde+Ea", "-AE-BCade-BDace-CDabe+abcde", "BCDe-Bcde-Cbde-Dbce"]

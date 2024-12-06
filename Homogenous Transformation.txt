@@ -1,0 +1,33 @@
+["b(-A)C-cAB", "bcA-ABC", "a", "wb(-A)"],
+["ab(-C)-acB", "abc-aBC", "-A", "w(-a)b"],
+["BC-bc", "b(-C)-cB", "0", "wB"],
+["0", "0", "0", "1"]
+
+["DEF-df", "d(-F)-fDE", "eD", "x-zd"],
+["dEF+fD", "DF-dfE", "de", "zD"],
+["e(-F)", "ef", "E", "y"],
+["0", "0", "0", "1"]
+
+['-ABCDf-ABCEFd-ABDEFc+ABcdf-ACDEFb+ACbdf+ADbcf+AEFbcd-Fae', '-ABCDF+ABCEdf+ABDEcf+ABFcd+ACDEbf+ACFbd+ADFbc-AEbcdf+aef', '-ABCde-ABDce-ACDbe+Abcde+Ea', '-ABCDz+ABcdz-ABcx+ACbdz-ACbx+ADbcz-Abw+ay']
+['AFe-BCDaf-BCEFad-BDEFac+Bacdf-CDEFab+Cabdf+Dabcf+EFabcd', '-Aef-BCDFa+BCEadf+BDEacf+BFacd+CDEabf+CFabd+DFabc-Eabcdf', '-AE-BCade-BDace-CDabe+abcde', '-Ay-BCDaz+Bacdz-Bacx+Cabdz-Cabx+Dabcz-abw']
+['BCDEF-BCdf-BDcf-BEFcd-CDbf-CEFbd-DEFbc+bcdf', '-BCDEf-BCFd-BDFc+BEcdf-CDFb+CEbdf+DEbcf+Fbcd', 'BCDe-Bcde-Cbde-Dbce', '-BCdz+BCx-BDcz+Bw-CDbz+bcdz-bcx']
+['0', '0', '0', '1']
+
+a=a
+b=b
+c=c
+d=d
+e=e
+f=f
+
+A=A
+B=B
+C=C
+D=D
+E=E
+F=F
+
+w=w
+x=x
+y=y
+z=z

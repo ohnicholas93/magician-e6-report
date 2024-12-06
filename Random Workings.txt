@@ -1,0 +1,55 @@
+{{cos(40)Subscript[θ,i](41),-sin(40)(41),0,0},{-sin(40)(41),cos(40)(41),0,0},{0,0,1,0},{0,0,0,1}}
+
+{
+{cos(Subscript[θ,1]),-sin(Subscript[θ,1]),0,0},
+{sin(Subscript[θ,1]),cos(Subscript[θ,1]),0,0},
+{0,0,1,0},
+{0,0,0,1}
+}
+{
+{cos(Subscript[θ,2]+90°),-sin(Subscript[θ,2]+90°),0,0},
+{0,0,-1,0},
+{sin(Subscript[θ,2]+90°),cos(Subscript[θ,2]+90°),0,0},
+{0,0,0,1}
+}
+{
+{cos(Subscript[θ,3]),-sin(Subscript[θ,3]),0,Subscript[μ,1]},
+{sin(Subscript[θ,3]),cos(Subscript[θ,3]),0,0},
+{0,0,1,0},
+{0,0,0,1}
+}
+
+(sin(θ_2) (-cos(θ_1)) cos(θ_3) - sin(θ_3) cos(θ_1) cos(θ_2) | sin(θ_2) sin(θ_3) cos(θ_1) - cos(θ_1) cos(θ_2) cos(θ_3) | sin(θ_1) | μ_1 sin(θ_2) (-cos(θ_1))
+sin(θ_1) sin(θ_2) (-cos(θ_3)) - sin(θ_1) sin(θ_3) cos(θ_2) | sin(θ_1) sin(θ_2) sin(θ_3) - sin(θ_1) cos(θ_2) cos(θ_3) | -cos(θ_1) | μ_1 (-sin(θ_1)) sin(θ_2)
+cos(θ_2) cos(θ_3) - sin(θ_2) sin(θ_3) | sin(θ_2) (-cos(θ_3)) - sin(θ_3) cos(θ_2) | 0 | μ_1 cos(θ_2)
+0 | 0 | 0 | 1)
+
+{{-(Cos[Subscript[θ,1]] Cos[Subscript[θ,3]] Sin[Subscript[θ,2]]) - Cos[Subscript[θ,1]] Cos[Subscript[θ,2]] Sin[Subscript[θ,3]],-(Cos[Subscript[θ,1]] Cos[Subscript[θ,2]] Cos[Subscript[θ,3]]) + Cos[Subscript[θ,1]] Sin[Subscript[θ,2]] Sin[Subscript[θ,3]],Sin[Subscript[θ,1]],-(Cos[Subscript[θ,1]] Sin[Subscript[θ,2]] Subscript[μ,1])},{-(Cos[Subscript[θ,3]] Sin[Subscript[θ,1]] Sin[Subscript[θ,2]]) - Cos[Subscript[θ,2]] Sin[Subscript[θ,1]] Sin[Subscript[θ,3]],-(Cos[Subscript[θ,2]] Cos[Subscript[θ,3]] Sin[Subscript[θ,1]]) + Sin[Subscript[θ,1]] Sin[Subscript[θ,2]] Sin[Subscript[θ,3]],-Cos[Subscript[θ,1]],-(Sin[Subscript[θ,1]] Sin[Subscript[θ,2]] Subscript[μ,1])},{Cos[Subscript[θ,2]] Cos[Subscript[θ,3]] - Sin[Subscript[θ,2]] Sin[Subscript[θ,3]],-(Cos[Subscript[θ,3]] Sin[Subscript[θ,2]]) - Cos[Subscript[θ,2]] Sin[Subscript[θ,3]],0,Cos[Subscript[θ,2]] Subscript[μ,1]},{0,0,0,1}}
+
+
+
+{
+{cos(Subscript[θ,4]),-sin(Subscript[θ,4]),0,Subscript[μ,2]},
+{sin(Subscript[θ,4]),cos(Subscript[θ,4]),0,0},
+{0,0,1,Subscript[μ,3]},
+{0,0,0,1}
+}
+{
+{cos(Subscript[θ,5]),-sin(Subscript[θ,5]),0,0},
+{0,0,1,Subscript[μ,4]},
+{-sin(Subscript[θ,5]),-cos(Subscript[θ,5]),0,0},
+{0,0,0,1}
+}
+{
+{cos(Subscript[θ,6]),-sin(Subscript[θ,6]),0,0},
+{0,0,-1,0},
+{sin(Subscript[θ,6]),cos(Subscript[θ,6]),0,0},
+{0,0,0,1}
+}
+
+(cos(θ_4) cos(θ_5) cos(θ_6) - sin(θ_4) sin(θ_6) | sin(θ_4) (-cos(θ_6)) - sin(θ_6) cos(θ_4) cos(θ_5) | sin(θ_5) cos(θ_4) | μ_2 - μ_4 sin(θ_4)
+sin(θ_4) cos(θ_5) cos(θ_6) + sin(θ_6) cos(θ_4) | cos(θ_4) cos(θ_6) - sin(θ_4) sin(θ_6) cos(θ_5) | sin(θ_4) sin(θ_5) | μ_4 cos(θ_4)
+sin(θ_5) (-cos(θ_6)) | sin(θ_5) sin(θ_6) | cos(θ_5) | μ_3
+0 | 0 | 0 | 1)
+
+{{Cos[Subscript[θ,4]] Cos[Subscript[θ,5]] Cos[Subscript[θ,6]] - Sin[Subscript[θ,4]] Sin[Subscript[θ,6]],-(Cos[Subscript[θ,6]] Sin[Subscript[θ,4]]) - Cos[Subscript[θ,4]] Cos[Subscript[θ,5]] Sin[Subscript[θ,6]],Cos[Subscript[θ,4]] Sin[Subscript[θ,5]],Subscript[μ,2] - Sin[Subscript[θ,4]] Subscript[μ,4]},{Cos[Subscript[θ,5]] Cos[Subscript[θ,6]] Sin[Subscript[θ,4]] + Cos[Subscript[θ,4]] Sin[Subscript[θ,6]],Cos[Subscript[θ,4]] Cos[Subscript[θ,6]] - Cos[Subscript[θ,5]] Sin[Subscript[θ,4]] Sin[Subscript[θ,6]],Sin[Subscript[θ,4]] Sin[Subscript[θ,5]],Cos[Subscript[θ,4]] Subscript[μ,4]},{-(Cos[Subscript[θ,6]] Sin[Subscript[θ,5]]),Sin[Subscript[θ,5]] Sin[Subscript[θ,6]],Cos[Subscript[θ,5]],Subscript[μ,3]},{0,0,0,1}}

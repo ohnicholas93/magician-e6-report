@@ -1,0 +1,11 @@
+p_x = '-ABCDz+ABcdz-ABcx+ACbdz-ACbx+ADbcz-Abw+ay'
+p_y = '-Ay-BCDaz+Bacdz-Bacx+Cabdz-Cabx+Dabcz-abw'
+p_z = '-BCdz+BCx-BDcz+Bw-CDbz+bcdz-bcx'
+
+["", "", "", "", "", ""]
+["", "", "", "", "", ""]
+["", "", "", "", "", ""]
+
+["aBCDz-aBcdz+aBcx-aCbdz+aCbx-aDbcz+abw+Ay", "AbCDz-Abcdz+Abcx+ACBdz-ACBx+ADBcz-ABw+ay", "ABcDz+ABCdz-ABCx-Acbdz+Acbx+ADbCz-Abw+ay", "ABCdz+ABcDz-ABcx+ACbDz-ACbx-Adbcz-Abw+ay", "-ABCDz+ABcdz-ABcx+ACbdz-ACbx+ADbcz-Abw+ay", "-ABCDz+ABcdz-ABcx+ACbdz-ACbx+ADbcz-Abw+ay"]
+["ay-BCDAz+BAcdz-BAcx+CAbdz-CAbx+DAbcz-Abw","-Ay+bCDaz-bacdz+bacx+CaBdz-CaBx+DaBcz-aBw","-Ay+BcDaz+BaCdz-BaCx-cabdz+cabx+DabCz-abw","-Ay+BCdaz+BacDz-Bacx+CabDz-Cabx-dabcz-abw","-Ay-BCDaz+Bacdz-Bacx+Cabdz-Cabx+Dabcz-abw","-Ay-BCDaz+Bacdz-Bacx+Cabdz-Cabx+Dabcz-abw"]
+["-BCdz+BCx-BDcz+Bw-CDbz+bcdz-bcx","bCdz-bCx+bDcz-bw-CDBz+Bcdz-Bcx","Bcdz-Bcx-BDCz+Bw+cDbz+bCdz-bCx","-BCDz+BCx+Bdcz+Bw+Cdbz+bcDz-bcx","-BCdz+BCx-BDcz+Bw-CDbz+bcdz-bcx","-BCdz+BCx-BDcz+Bw-CDbz+bcdz-bcx"]

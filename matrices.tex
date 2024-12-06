@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+
+% Essential packages for matrix operations
+\usepackage{amsmath}    % Advanced math formatting
+\usepackage{mathtools}  % Enhancement to amsmath
+\usepackage{bm}         % Bold math symbols
+\usepackage{array}      % Enhanced array and tabular environments
+\usepackage{gensymb}    % For degree symbol
+
+\begin{document}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+    \hline
+    $i$ & $\alpha_{i-1}$ & $a_{i-1}$ & $\theta_i$ & $d_i$ \\
+    \hline
+    1 & 0\degree & 0 & $\theta_1$ & 0 \\
+    \hline
+    2 & 90\degree & 0 & $\theta_2 + 90\degree$ & 0 \\
+    \hline
+    3 & 0\degree & $\ell_1$ & $\theta_3$ & 0 \\
+    \hline
+    4 & 0\degree & $\ell_2$ & $\theta_4$ & $\ell_3$ \\
+    \hline
+    5 & -90\degree & 0 & $\theta_5$ & $\ell_4$ \\
+    \hline
+    6 & 90\degree & 0 & $\theta_6$ & 0 \\
+    \hline
+\end{tabular}
+\end{center}
+
+\begin{align*}
+{}^{0}T_1 &= \begin{pmatrix}
+\cos(\theta_1) & -\sin(\theta_1) & 0 & 0 \\
+\sin(\theta_1) & \cos(\theta_1) & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix} 
+\\[1em]
+{}^{1}T_2 &= \begin{pmatrix}
+\cos(\theta_2 + 90\degree) & -\sin(\theta_2 + 90\degree) & 0 & 0 \\
+\sin(\theta_2 + 90\degree)\cos(90\degree) & \cos(\theta_2 + 90\degree)\cos(90\degree) & -\sin(90\degree) & 0 \\
+\sin(\theta_2 + 90\degree)\sin(90\degree) & \cos(\theta_2 + 90\degree)\sin(90\degree) & \cos(90\degree) & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix} \\[1em]
+&= \begin{pmatrix}
+\cos(\theta_2 + 90\degree) & -\sin(\theta_2 + 90\degree) & 0 & 0 \\
+\sin(\theta_2 + 90\degree) \cdot 0 & \cos(\theta_2 + 90\degree) \cdot 0 & - 1 & 0 \\
+\sin(\theta_2 + 90\degree) \cdot 1 & \cos(\theta_2 + 90\degree) \cdot 1 & 0 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix} \\[1em]
+&= \begin{pmatrix}
+\cos(\theta_2 + 90\degree) & -\sin(\theta_2 + 90\degree) & 0 & 0 \\
+0 & 0 & - 1 & 0 \\
+\sin(\theta_2 + 90\degree) & \cos(\theta_2 + 90\degree) & 0 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix} 
+\\[1em]
+{}^{2}T_3 &= \begin{pmatrix}
+\cos(\theta_3) & -\sin(\theta_3) & 0 & \ell_1 \\
+\sin(\theta_3) & \cos(\theta_3) & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\end{align*}
+
+\begin{align*}
+{}^{3}T_4 &= \begin{pmatrix}
+\cos(\theta_4) & -\sin(\theta_4) & 0 & \ell_2 \\
+\sin(\theta_4) & \cos(\theta_4) & 0 & -\sin(0\degree) \cdot \ell_3 \\
+0 & 0 & 1 & \cos(0\degree) \cdot \ell_3 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+= \begin{pmatrix}
+\cos(\theta_4) & -\sin(\theta_4) & 0 & \ell_2 \\
+\sin(\theta_4) & \cos(\theta_4) & 0 & 0 \\
+0 & 0 & 1 & \ell_3 \\
+0 & 0 & 0 & 1
+\end{pmatrix} 
+\\[1em]
+{}^{4}T_5 &= \begin{pmatrix}
+\cos(\theta_5) & -\sin(\theta_5) & 0 & 0 \\
+\sin(\theta_5)\cos(-90\degree) & \cos(\theta_5)\cos(-90\degree) & -\sin(-90\degree) & -\sin(-90\degree) \cdot \ell_4 \\
+\sin(\theta_5)\sin(-90\degree) & \cos(\theta_5)\sin(-90\degree) & \cos(-90\degree) & \cos(-90\degree) \cdot \ell_4 \\
+0 & 0 & 0 & 1
+\end{pmatrix} \\[1em]
+&= \begin{pmatrix}
+\cos(\theta_5) & -\sin(\theta_5) & 0 & 0 \\
+\sin(\theta_5) \cdot 0 & \cos(\theta_5) \cdot 0 & 1 & 1 \cdot \ell_4 \\
+\sin(\theta_5) \cdot -1 & \cos(\theta_5) \cdot -1 & 0 & 0 \cdot \ell_4 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+= \begin{pmatrix}
+\cos(\theta_5) & -\sin(\theta_5) & 0 & 0 \\
+0 & 0 & 1 & \ell_4 \\
+-\sin(\theta_5) & -\cos(\theta_5) & 0 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix} 
+\\[1em]
+{}^{5}T_6 &= \begin{pmatrix}
+\cos(\theta_6) & -\sin(\theta_6) & 0 & 0 \\
+\sin(\theta_6)\cos(90\degree) & \cos(\theta_6)\cos(90\degree) & -\sin(90\degree) & 0 \\
+\sin(\theta_6)\sin(90\degree) & \cos(\theta_6)\sin(90\degree) & \cos(90\degree) & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix} \\[1em]
+&= \begin{pmatrix}
+\cos(\theta_6) & -\sin(\theta_6) & 0 & 0 \\
+\sin(\theta_6) \cdot 0 & \cos(\theta_6) \cdot 0 & -1 & 0 \\
+\sin(\theta_6) \cdot 1 & \cos(\theta_6) \cdot 1 & 0 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+= \begin{pmatrix}
+\cos(\theta_6) & -\sin(\theta_6) & 0 & 0 \\
+0 & 0 & -1 & 0 \\
+\sin(\theta_6) & \cos(\theta_6) & 0 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\end{align*}
+
+\[
+{}^0T_3 = \begin{pmatrix}
+\sin(\theta_2) (-\cos(\theta_1)) \cos(\theta_3) - \sin(\theta_3) \cos(\theta_1) \cos(\theta_2) & \sin(\theta_2) \sin(\theta_3) \cos(\theta_1) - \cos(\theta_1) \cos(\theta_2) \cos(\theta_3) & \sin(\theta_1) & 0 \\
+\sin(\theta_1) \sin(\theta_2) (-\cos(\theta_3)) - \sin(\theta_1) \sin(\theta_3) \cos(\theta_2) & \sin(\theta_1) \sin(\theta_2) \sin(\theta_3) - \sin(\theta_1) \cos(\theta_2) \cos(\theta_3) & -\cos(\theta_1) & 0 \\
+\cos(\theta_2) \cos(\theta_3) - \sin(\theta_2) \sin(\theta_3) & \sin(\theta_2) (-\cos(\theta_3)) - \sin(\theta_3) \cos(\theta_2) & 0 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\]
+
+\end{document}
+
